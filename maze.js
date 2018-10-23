@@ -28,7 +28,24 @@ function main(){
 	});
 	//****************************************************************
 
+	//part3
+
+	let end = document.getElementById('end');
+
+	end.onmouseover=function(){
+		if(fails==0){
+			//document.getElementById('end').innerHTML = 'YOU WIN';
+			alert('You Win!!')
+		}else{
+			alert('You Loose');
+		};
+
+	};
+
+	//***************************************************************
+
 	
+
 	
 
 
