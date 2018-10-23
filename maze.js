@@ -39,6 +39,17 @@ function main(){
 			}
 		};
 	};
+
+
+	let start = document.getElementById('start');
+	start.onclick = function(){
+		fails=false;
+		document.getElementById("status").innerHTML = 'Move your mouse over the \"S\" to begin.';
+		for(wall = 0; wall < walls.length-1; wall++){
+			walls[wall].setAttribute('class', 'boundary boundary');
+		}
+		
+	};
 	
 
 
