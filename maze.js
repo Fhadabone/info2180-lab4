@@ -63,6 +63,19 @@ function main(){
 			document.getElementById('status').innerHTML = "YOU WIN!!";
 		}
 	};
+
+
+	if(started){
+		let maze=document.getElementById('maze');
+		maze.addEventListener('mouseleave', function(){
+			document.getElementById('status').innerHTML = "YOU LOSE!!";
+			if(started){
+				for(wall = 0; wall < walls.length-1; wall++){
+					walls[wall].setAttribute('class','boundary youlose');
+				}
+			}
+		});
+	};
 	
 
 
