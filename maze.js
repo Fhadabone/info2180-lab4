@@ -3,5 +3,11 @@ window.onload = function(){
 };
 
 function main(){
+	//part1
+	let wall = document.getElementById('boundary1');
+	wall.onmouseover=function(){
+		this.setAttribute('class', 'boundary youlose');
+
+	};
 	
-}
+};
