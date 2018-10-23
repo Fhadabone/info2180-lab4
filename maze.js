@@ -29,6 +29,8 @@ function main(){
 		};
 	}
 
+	/*
+
 	let end = document.getElementById('end');
 	if(started){
 		end.onmouseover = function(){
@@ -39,6 +41,7 @@ function main(){
 			}
 		};
 	};
+	*/
 
 
 	let start = document.getElementById('start');
@@ -50,7 +53,20 @@ function main(){
 		}
 		
 	};
+
+
+	let end = document.getElementById('end');
+	end.onmouseover = function(){
+		if(fails){
+			document.getElementById('status').innerHTML = "YOU LOSE!!";
+		}else{
+			document.getElementById('status').innerHTML = "YOU WIN!!";
+		}
+	};
 	
+
+
+
 
 
 
