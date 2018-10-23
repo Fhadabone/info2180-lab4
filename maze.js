@@ -29,18 +29,20 @@ function main(){
 	//****************************************************************
 
 	//part3
+	/*
 
 	let end = document.getElementById('end');
 
 	end.onmouseover=function(){
 		if(fails==0){
-			//document.getElementById('end').innerHTML = 'YOU WIN';
+			
 			alert('You Win!!')
 		}else{
 			alert('You Loose');
 		};
 
 	};
+	*/
 
 	//***************************************************************
 
@@ -51,13 +53,30 @@ function main(){
 	start.onclick = function(){
 		let walls = document.querySelectorAll('.boundary');
 		walls.forEach(function(elem){
+			document.getElementById("status").innerHTML = 'Move your mouse over the \"S\" to begin.';
 			fails=0;
 			elem.setAttribute('class', 'boundary boundary');
+
+
 	});
 
 	};
 
-	
+	//***************************************************************
+
+	//part5
+
+	let end = document.getElementById('end');
+
+	end.onmouseover=function(){
+		if(fails==0){
+			document.getElementById('status').innerHTML = 'YOU WIN!!!';
+			
+		}else{
+			document.getElementById('status').innerHTML = 'YOU LOSE!!!';
+		};
+
+	};
 
 
 	
