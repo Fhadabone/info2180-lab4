@@ -28,6 +28,17 @@ function main(){
 			};
 		};
 	}
+
+	let end = document.getElementById('end');
+	if(started){
+		end.onmouseover = function(){
+			if(fails){
+				alert('YOU LOSE!!!');
+			}else{
+				alert('YOU WIN!!!');
+			}
+		};
+	};
 	
 
 
