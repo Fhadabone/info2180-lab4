@@ -44,7 +44,18 @@ function main(){
 
 	//***************************************************************
 
-	
+	//part4
+
+	let start = document.getElementById('start');
+
+	start.onclick = function(){
+		let walls = document.querySelectorAll('.boundary');
+		walls.forEach(function(elem){
+			fails=0;
+			elem.setAttribute('class', 'boundary boundary');
+	});
+
+	};
 
 	
 
